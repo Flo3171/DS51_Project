@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/flocl/ontologies/2023/5/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/flocl/ontologies/2023/5/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_caractéristique -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_caractéristique"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_caractéristique"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_caractéristique"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRegime_Alimentaire"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau -->
+
+    <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau">
+        <rdfs:subPropertyOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_caractéristique"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAigle -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAigle">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAérien"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfCarnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPlumes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAérien -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAérien">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfCarnivore -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfCarnivore">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRegime_Alimentaire"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfEcailles -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfEcailles">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfLoup -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfLoup">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfTerrestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfCarnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoiles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfMarin -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfMarin">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOmnivore -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOmnivore">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRegime_Alimentaire"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOurs -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOurs">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfTerrestre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOmnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoiles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPasserin -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPasserin">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAérien"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOmnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPlumes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPlumes -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPlumes">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoiles -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoiles">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPeau"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoisson_Rouge -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoisson_Rouge">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfMarin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOmnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfEcailles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRegime_Alimentaire -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRegime_Alimentaire">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRequin -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRequin">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAnimal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_habitat"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfMarin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_pour_régime_alimentaire"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfCarnivore"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfa_sur_la_peau"/>
+                <owl:someValuesFrom rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfEcailles"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfTerrestre -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfTerrestre">
+        <rdfs:subClassOf rdf:resource="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfHabitat"/>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf#Caractéristiques -->
+
+    <owl:Class rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdf#Caractéristiques"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAigle"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfLoup"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfOurs"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPasserin"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoisson_Rouge"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfRequin"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfAérien"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfMarin"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfTerrestre"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfEcailles"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPlumes"/>
+            <rdf:Description rdf:about="https://raw.githubusercontent.com/Flo3171/DS51_Project/master/code/animal_ontologie.rdfPoiles"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
