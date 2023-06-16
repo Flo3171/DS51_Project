@@ -170,8 +170,7 @@ if __name__ == "__main__":
     # Print the accuracy measured by tensorflow
     print(model.evaluate(dataset_test_transformed, return_dict=True))
 
-    # feature_indices_inv = {value: key for key, value in feature_indices.items()}
-
+    # Measure the accuracy of the model
     count = 0
     count_correct = 0
     for inputs, labels in dataset_test:
